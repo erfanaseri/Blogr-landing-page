@@ -1,0 +1,165 @@
+.header {
+  // display: flex;
+  // flex-direction: column;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 65vh;
+  background-size: 150%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  border-bottom-left-radius: 10rem;
+  background-image: url(../img/bg-pattern-intro.svg),
+    linear-gradient(
+      to right,
+      rgba($color-cta-mobile-nav-gradient-1, 0.92),
+      rgba($color-cta-mobile-nav-gradient-2, 0.92)
+    );
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    padding: 3rem 9rem;
+    gap: 5rem;
+  }
+
+  &__logo {
+    width: 10%;
+    display: block;
+  }
+
+  &__list {
+    display: flex;
+    margin-right: auto;
+    gap: 4rem;
+    position: relative;
+  }
+
+  &__item {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  &__link {
+    color: $color-text;
+    text-decoration: none;
+    position: relative;
+    font-weight: bolder;
+  }
+
+  &__arrow {
+    transition: all 0.2s;
+
+    &--active {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__list-box {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 15rem;
+    top: 3rem;
+    background-color: $color-text;
+
+    border-radius: 1rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s;
+
+    &--active {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    &--product {
+      height: 25rem;
+    }
+
+    &--company {
+      height: 20rem;
+    }
+
+    &--connect {
+      height: 15rem;
+    }
+  }
+
+  &__item-box {
+    list-style: none;
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+
+  &__link-box {
+    text-decoration: none;
+    color: $color-footer-background;
+    font-family: $font-secondary;
+    transition: all 0.2s;
+
+    &:hover {
+      font-weight: bolder;
+    }
+  }
+
+  &__btns-div {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__btn-login {
+    border: none;
+  }
+
+  &__btn-signup {
+    background-color: $color-text;
+    color: $color-cta-text;
+    transition: all 0.2s;
+
+    &:hover {
+      color: $color-text;
+      background-color: $color-cta-background-hover;
+      border: none;
+    }
+  }
+
+  &__headings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  &__btns {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__btn-start {
+    background-color: $color-text;
+    color: $color-cta-text;
+    transition: all 0.2s;
+
+    &:hover {
+      color: $color-text;
+      background-color: $color-cta-background-hover;
+      border: none;
+    }
+  }
+
+  &__btn-learn {
+    transition: all 0.2s;
+    &:hover {
+      background-color: $color-text;
+      color: $color-cta-text;
+    }
+  }
+}

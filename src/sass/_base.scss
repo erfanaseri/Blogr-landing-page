@@ -1,0 +1,47 @@
+// COLOR VARIABLES
+
+$color-cta-text: hsl(356, 100%, 66%);
+$color-cta-background-hover: hsl(355, 100%, 74%);
+$color-heading: hsl(208, 49%, 24%);
+$color-text: hsl(0, 0%, 100%);
+$color-footer-text: hsl(240, 2%, 79%);
+$color-body-copy: hsl(207, 13%, 34%);
+$color-footer-background: hsl(240, 10%, 16%);
+$color-cta-mobile-nav-gradient-1: hsl(13, 100%, 72%);
+$color-cta-mobile-nav-gradient-2: hsl(353, 100%, 62%);
+$color-background-body-gradient-1: hsl(237, 17%, 21%);
+$color-background-body-gradient-2: hsl(237, 23%, 32%);
+
+// FONT VARIABLES
+$font-primary: "Overpass", sans-serif;
+$font-secondary: "Ubuntu", sans-serif;
+
+// RESPONSIVE BREAKSPOINTS
+$bp-max: 87.5em; // 1400px
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px
+$bp-small: 43.75em; // 700px
+$bp-smallest: 31.25em; // 500px
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px
+
+  @media only screen and (min-width: $bp-max) {
+    font-size: 75%;
+  }
+}
+
+body {
+  font-family: $font-primary;
+  font-size: 1.6rem;
+}
